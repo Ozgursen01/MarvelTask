@@ -2,7 +2,7 @@
 
 <template>
   <div id="app">
-    <navbar></navbar> <!-- Navbar bileşenini burada kullanıyoruz -->
+    <navbar></navbar>
 
     <router-view></router-view>
   </div>

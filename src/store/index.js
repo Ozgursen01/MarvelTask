@@ -7,7 +7,7 @@ import md5 from 'js-md5';
 export default createStore({
   state: {
     comics: [],
-    favorites: [] // Yeni favori listesi eklendi
+    favorites: [] 
   },
   mutations: {
     setComics(state, comics) {
@@ -16,10 +16,8 @@ export default createStore({
     toggleFavorite(state, comic) {
       const index = state.favorites.indexOf(comic.id);
       if (index === -1) {
-        // Favoriye ekle
         state.favorites.push(comic.id);
       } else {
-        // Favoriden çıkar
         state.favorites.splice(index, 1);
       }
     }
@@ -43,7 +41,6 @@ export default createStore({
     },
     toggleFavorite({ commit, state }, comic) {
       commit('toggleFavorite', comic);
-      // Favorileri yerel depolama veya veritabanına kaydetmek için ek kodlar eklenebilir
     }
   },
   getters: {

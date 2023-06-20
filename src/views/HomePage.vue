@@ -143,9 +143,6 @@ export default {
       return this.sciFiComics.length === 0;
     },
     sciFiComics() {
-      // Burada Bilim Kurgu çizgi romanlarını filtreleyebilirsiniz
-      // Örneğin:
-      // return this.comics.filter(comic => comic.genre === 'Sci-Fi');
       return this.comics;
     },
     favoriteCount() {
@@ -233,7 +230,6 @@ export default {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  /* Arka plana bir overlay ekler */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -287,7 +283,6 @@ export default {
   background-size: cover;
   position: relative;
   height: 90vh;
-  /* Sayfa yüksekliği kadar arka plan görüntüsü alır */
 }
 
 .sub-title {

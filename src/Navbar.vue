@@ -41,7 +41,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: top 0.8s ease; /* Animasyon süresini ayarlayabilirsiniz */
+    transition: top 0.8s ease;
   }
   
   .logo {
